@@ -17,7 +17,9 @@ export default function Topbar() {
 
   useEffect(() => {
     if (user?.userId) {
-      const socket = new SockJS("http://localhost:8080/ws");
+      const socket = new SockJS(
+        `https://social-mediabackend-0f30044bc180.herokuapp.com/ws`
+      );
       const client = new Client({
         webSocketFactory: () => socket,
         onConnect: (frame) => {

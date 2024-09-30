@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../../context/Authcontext";
-import "./share.css"; // You can create a separate CSS file for styling
+import "./share.css";
 
 export default function Share({ onPostUploaded }) {
   const [image, setImage] = useState(null);
@@ -19,7 +19,7 @@ export default function Share({ onPostUploaded }) {
 
     try {
       await axios.post(
-        `http://localhost:8080/api/images/upload?desc=${encodeURIComponent(
+        `https://social-mediabackend-0f30044bc180.herokuapp.com/api/images/upload?desc=${encodeURIComponent(
           description
         )}&userId=${user.userId}`,
         formData,

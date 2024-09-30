@@ -22,7 +22,7 @@ export default function Post({
       try {
         if (postId != null) {
           const response = await axios.get(
-            `http://localhost:8080/user/post/viewComment/${postId}`
+            `https://social-mediabackend-0f30044bc180.herokuapp.com/user/post/viewComment/${postId}`
           );
           setComments(response.data.usersComment);
         }
@@ -42,10 +42,13 @@ export default function Post({
         userId: userId,
         imageId: postId,
       };
-      await axios.post(`http://localhost:8080/user/post/comment`, newComment);
+      await axios.post(
+        `https://social-mediabackend-0f30044bc180.herokuapp.com/user/post/comment`,
+        newComment
+      );
       setCommentInput("");
       const response = await axios.get(
-        `http://localhost:8080/user/post/viewComment/${postId}`
+        `https://social-mediabackend-0f30044bc180.herokuapp.com/user/post/viewComment/${postId}`
       );
       setCommentChanged(response.data);
     } catch (error) {

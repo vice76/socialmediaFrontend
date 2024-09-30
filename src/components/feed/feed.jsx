@@ -10,7 +10,9 @@ export default function Feed() {
   const { user } = useContext(AuthContext);
 
   const fetchPosts = async () => {
-    const res = await axios.get("http://localhost:8080/api/images/all");
+    const res = await axios.get(
+      `https://social-mediabackend-0f30044bc180.herokuapp.com/api/images/all`
+    );
     setPosts(res.data);
   };
 
