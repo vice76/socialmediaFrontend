@@ -1,7 +1,7 @@
 import React, { useRef, useContext } from "react";
 import "./login.css";
 import { AuthContext } from "../../context/Authcontext";
-import CircularProgress from "@mui/material/CircularProgress";
+// import CircularProgress from "@mui/material/CircularProgress";
 import { useNavigate } from "react-router";
 import { loginCall } from "../../apiCalls";
 
@@ -49,22 +49,22 @@ export default function Login() {
               className="loginInput"
             />
             <button className="loginButton" type="submit" disabled={isFetching}>
-              {isFetching ? (
+              {/* {isFetching ? (
                 <CircularProgress color="secondary" size="20px" />
               ) : (
                 "Log In"
-              )}
+              )} */}
             </button>
             <span className="loginForgot">Forgot Password?</span>
             <button
               className="loginRegisterButton"
               onClick={handleClickRedirectToRegister}
             >
-              {isFetching ? (
+              {/* {isFetching ? (
                 <CircularProgress color="secondary" size="20px" />
               ) : (
                 "Create a New Account"
-              )}
+              )} */}
             </button>
           </form>
         </div>
