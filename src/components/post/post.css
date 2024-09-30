@@ -1,0 +1,116 @@
+.post {
+  width: 600px; /* Increase width by 20% from 500px to 600px */
+  background-color: #f0f0f0; /* Light grey background for the post */
+  margin: 20px auto; /* Center the post horizontally and add vertical spacing */
+  border: 1px solid #ccc; /* Border around each post */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Post wrapper with padding */
+.postWrapper {
+  padding: 20px;
+}
+
+/* Top section (user details) */
+.postTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postUsername {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.postTopRight {
+  cursor: pointer;
+}
+
+/* Center section (description and image) */
+.postCenter {
+  margin-top: 15px;
+}
+
+.postText {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Image styling */
+.postImg {
+  width: 100%; /* Set the image to fill the width of the post */
+  height: 360px; /* Increase height by 20% from 300px to 360px */
+  object-fit: cover; /* Ensure the image covers the entire area without distortion */
+  border-radius: 10px;
+}
+
+/* Bottom section (like/comment buttons) */
+.postBottom {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postBottomLeft,
+.postBottomRight {
+  display: flex;
+  align-items: center;
+}
+
+.commentsSection {
+  margin-top: 10px;
+}
+
+.commentsList {
+  max-height: 150px; /* Limit height of comments section */
+  overflow-y: auto; /* Enable scrolling */
+  margin-bottom: 10px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.commentUser {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.commentInputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.commentInput {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.commentButton {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.commentButton:hover {
+  background-color: #0056b3;
+}

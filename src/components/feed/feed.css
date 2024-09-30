@@ -1,0 +1,24 @@
+.feed {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #fafafa;
+}
+
+.feedWrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .post,
+  .feedWrapper {
+    width: 100%;
+  }
+
+  .postImg {
+    height: auto;
+  }
+}
